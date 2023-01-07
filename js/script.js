@@ -31,8 +31,9 @@ if(num === ''){
 			alert ('Повинні бути числа')
 			}
 			else if (num.length !== 5){
-				alert ('Ви ввели не пятизначне число')
+				alert ('Ви ввели не п\'ятизначне число')
 					}
 					else {
-						alert (num.split('').map(Number))
+						const numbers = Array.from(num);
+						alert (numbers.join(' '))
 						}
